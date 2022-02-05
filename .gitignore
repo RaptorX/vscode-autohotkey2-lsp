@@ -16,3 +16,4 @@ webpack.config.js
 icon.png
 .vscodeignore
 !*.nls.*
+!package.json
