@@ -1,3 +1,11 @@
+## 1.2.5
+- 修复[#70](https://github.com/thqby/vscode-autohotkey2-lsp/issues/70)
+- 优化代码格式化
+- 增加静态函数调用的参数检查[#23](https://github.com/thqby/vscode-autohotkey2-lsp/issues/23)
+
+## 1.2.4
+- 修复[#69](https://github.com/thqby/vscode-autohotkey2-lsp/issues/69)
+
 ## 1.2.3
 - 修复[#68](https://github.com/thqby/vscode-autohotkey2-lsp/issues/68)
 
