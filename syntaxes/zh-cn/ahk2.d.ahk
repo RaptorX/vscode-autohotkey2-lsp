@@ -1346,7 +1346,7 @@ IsXDigit(Value) => Number
  * @param MaxEvents 忽略此参数以显示脚本的主窗口, 等效于选择“查看->键历史记录”菜单项.
  * 否则, 此参数设置可以记录在窗口中显示的最大键盘和鼠标事件数（默认为40, 限制为500）. 密钥历史记录也被重置, 但是主窗口未显示或刷新. 指定0以完全禁用密钥历史记录.
  */
-KeyHistory(MaxEvents)
+KeyHistory([MaxEvents])
 
 /**
  * 等待按键或鼠标/操纵杆按钮被释放或按下.
@@ -1366,7 +1366,7 @@ KeyWait(KeyName, Options := '') => Number
 /**
  * 启用或禁用行日志记录或显示最近执行的脚本行.
  */
-ListLines(Mode)
+ListLines([Mode])
 
 /**
  * 返回列表视图中的项目/行列表.
@@ -1806,7 +1806,7 @@ RegExReplace(Haystack, NeedleRegEx, Replacement := '', &OutputVarCount := '', Li
 /**
  * 从注册表读取值.
  */
-RegRead([KeyName, ValueName]) => String
+RegRead([KeyName, ValueName, Default]) => String
 
 /**
  * 将值写入注册表.
@@ -2192,7 +2192,7 @@ SubStr(String, StartingPos [, Length]) => String
 /**
  * 禁用或启用所有的或选择的热键和热字串.
  */
-Suspend(Mode)
+Suspend(Mode := -1)
 
 /**
  * 将字符串转换为标题大小写.
@@ -2594,7 +2594,7 @@ class Buffer extends Object {
 	 * 在不需要先读取缓冲而直接写入的情况下, 通常应将其省略, 因为它的时间开销与字节数成正比.
 	 * 如果省略, 则不初始化缓冲的内存; 每个字节的值是任意的.
 	 */
-	__New(ByteCount [, FillByte]) => Buffer
+	__New([ByteCount, FillByte]) => Buffer
 
 	/**
 	 * 检索缓冲区的当前内存地址.
@@ -2658,6 +2658,56 @@ class ComValue extends Any {
 	/**
 	 * 包装一个值, 安全数组或 COM 对象, 以供脚本使用或传递给 COM 方法.
 	 * @param VarType 表示值类型的整数. 类型列表见 ComObjType.
+	 * 
+	 * VT_EMPTY     :=      0  ; 未指定值
+	 * 
+	 * VT_NULL      :=      1  ; 类似 SQL 中的空值
+	 * 
+	 * VT_I2        :=      2  ; 16 位有符号整数
+	 * 
+	 * VT_I4        :=      3  ; 32 位有符号整数
+	 * 
+	 * VT_R4        :=      4  ; 32 位浮点数
+	 * 
+	 * VT_R8        :=      5  ; 64 位浮点数
+	 * 
+	 * VT_CY        :=      6  ; 货币
+	 * 
+	 * VT_DATE      :=      7  ; 日期
+	 * 
+	 * VT_BSTR      :=      8  ; COM 字符串(带长度前缀的 Unicode 字符串)
+	 * 
+	 * VT_DISPATCH  :=      9  ; COM 对象
+	 * 
+	 * VT_ERROR     :=    0xA  ; 错误码(32 位整数)
+	 * 
+	 * VT_BOOL      :=    0xB  ; 布尔值: 真(-1) 或假(0)
+	 * 
+	 * VT_VARIANT   :=    0xC  ; VARIANT (必须与 VT_ARRAY 或 VT_BYREF 组合使用)
+	 * 
+	 * VT_UNKNOWN   :=    0xD  ; IUnknown 接口指针
+	 * 
+	 * VT_DECIMAL   :=    0xE  ; 小数(不支持)
+	 * 
+	 * VT_I1        :=   0x10  ; 8 位有符号整数
+	 * 
+	 * VT_UI1       :=   0x11  ; 8 位无符号整数
+	 * 
+	 * VT_UI2       :=   0x12  ; 16 位无符号整数
+	 * 
+	 * VT_UI4       :=   0x13  ; 32 位无符号整数
+	 * 
+	 * VT_I8        :=   0x14  ; 64 位有符号整数
+	 * 
+	 * VT_UI8       :=   0x15  ; 64 位无符号整数
+	 * 
+	 * VT_INT       :=   0x16  ; 有符号机器整数
+	 * 
+	 * VT_UINT      :=   0x17  ; 无符号机器整数
+	 * 
+	 * VT_ARRAY     := 0x2000  ; SAFEARRAY
+	 * 
+	 * VT_BYREF     := 0x4000  ; 指向另一种类型值的指针
 	 * @param Value 要包装的值. 当前仅支持整数和指针值.
 	 * @param Flags 影响包装器对象行为的标志; 有关详情, 请参阅 ComObjFlags.
 	 */

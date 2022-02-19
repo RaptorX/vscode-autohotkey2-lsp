@@ -1346,7 +1346,7 @@ IsXDigit(Value) => Number
  * @param MaxEvents Ignore this parameter to display the main window of the script, which is equivalent to selecting the "View -> Key History" menu item.
  * Otherwise, this parameter setting can record the maximum number of keyboard and mouse events displayed in the window (the default is 40, the limit is 500). The key history is also reset, but the main window is not displayed or refreshed. Specify 0 to complete Disable key history.
  */
-KeyHistory(MaxEvents)
+KeyHistory([MaxEvents])
 
 /**
  * Wait for the key or mouse/joystick button to be released or pressed.
@@ -1366,7 +1366,7 @@ KeyWait(KeyName, Options := '') => Number
 /**
  * Enable or disable line logging or display the most recently executed script line.
  */
-ListLines(Mode)
+ListLines([Mode])
 
 /**
  * Return to the list of items/rows in the list view.
@@ -1806,7 +1806,7 @@ RegExReplace(Haystack, NeedleRegEx, Replacement := '', &OutputVarCount := '', Li
 /**
  * Read the value from the registry.
  */
-RegRead([KeyName, ValueName]) => String
+RegRead([KeyName, ValueName, Default]) => String
 
 /**
  * Write the value to the registry.
@@ -2192,7 +2192,7 @@ SubStr(String, StartingPos [, Length]) => String
 /**
  * Disable or enable all or selected hotkeys and hotstrings.
  */
-Suspend(Mode)
+Suspend(Mode := -1)
 
 /**
  * Convert string to title case.
@@ -2594,7 +2594,7 @@ class Buffer extends Object {
 	 * In the case of direct writing without first reading the buffer, it should usually be omitted, because its time overhead is proportional to the number of bytes.
 	 * If omitted, the buffered memory is not initialized; the value of each byte is arbitrary.
 	 */
-	__New(ByteCount [, FillByte]) => Buffer
+	__New([ByteCount, FillByte]) => Buffer
 
 	/**
 	 * Retrieve the current memory address of the buffer.
