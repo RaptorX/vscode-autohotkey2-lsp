@@ -2215,7 +2215,13 @@ SysGetIPAddresses() => Array
 Tan(Number) => Number
 
 /**
- * 设置线程的优先级或是否可以被中断. 它也可以临时禁用所有的计时器.\n\nThread 'NoTimers' , TrueOrFalse\n\nThread 'Priority', Level\n\nThread 'Interrupt' [, Duration, LineCount]
+ * 设置线程的优先级或是否可以被中断. 它也可以临时禁用所有的计时器.
+ * 
+ * Thread 'NoTimers' , TrueOrFalse
+ * 
+ * Thread 'Priority', Level
+ * 
+ * Thread 'Interrupt' [, Duration, LineCount]
  */
 Thread(SubFunction [, Value1, Value2])
 
@@ -2749,7 +2755,7 @@ class Error extends Object {
 	/**
 	 * 创建 Error 对象.
 	 */
-	__New(Message [, What, Extra]) => Error
+	__New([Message, What, Extra]) => Error
 }
 
 class File extends Object {
@@ -3918,7 +3924,7 @@ class Object extends Any {
 }
 
 class OSError extends Error {
-	__New(code [, What, Extra]) => OSError
+	__New([code, What, Extra]) => OSError
 }
 
 class Primitive extends Any {
@@ -3931,12 +3937,12 @@ class RegExMatchInfo extends Object {
 	/**
 	 * 返回整体匹配或捕获的子模式的位置.
 	 */
-	Pos(N) => Number
+	Pos([N]) => Number
 
 	/**
 	 * 返回整体匹配或捕获的子模式的长度.
 	 */
-	Len(N) => Number
+	Len([N]) => Number
 
 	/**
 	 * 返回给定子模式的名称(如果有的话).

@@ -5,18 +5,6 @@
 
 [中文版 README](#AutoHotkey2语言支持)往下翻页
 
-## lsp-server download
-
-```shell
-# git
-git clone --depth=1 -b server https://github.com/thqby/vscode-autohotkey2-lsp
-
-# wget
-wget -O server.zip https://github.com/thqby/vscode-autohotkey2-lsp/archive/refs/heads/server.zip
-unzip server.zip
-rm server.zip
-```
-
 ## repositories:
 
 [Github](https://github.com/thqby/vscode-autohotkey2-lsp)
