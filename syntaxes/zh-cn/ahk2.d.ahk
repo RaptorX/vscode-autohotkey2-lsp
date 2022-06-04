@@ -616,7 +616,7 @@ EnvGet(EnvVarName) => String
 /**
  * 将值写入环境变量包含的变量中.
  */
-EnvSet(EnvVar, Value) => void
+EnvSet(EnvVar [, Value]) => void
 
 /**
  * 退出当前线程. 脚本退出时, 返回给其调用者的-2147483648和2147483647之间的整数.
@@ -1038,7 +1038,7 @@ GetKeyVK(KeyName) => Number
 /**
  * 检索方法的实现函数.
  */
-GetMethod(Value, Name) => Func
+GetMethod(Value [, Name, ParamCount]) => Func
 
 /**
  * 激活由 GroupAdd 定义的窗口组中的下一个窗口.
@@ -1090,7 +1090,7 @@ HasBase(Value, BaseObj) => Number
 /**
  * 如果指定的值具有指定名称的方法, 则返回非零数字.
  */
-HasMethod(Value, Name) => Number
+HasMethod(Value [, Name, ParamCount]) => Number
 
 /**
  * 如果指定值具有指定名称的属性, 则返回非零数字.
@@ -1811,7 +1811,7 @@ RegRead([KeyName, ValueName, Default]) => String
 /**
  * 将值写入注册表.
  */
-RegWrite(Value, ValueType, KeyName [, ValueName]) => void
+RegWrite(Value [, ValueType, KeyName, ValueName]) => void
 
 /**
  * 使用新的脚本实例替换当前正在运行的.
@@ -3771,7 +3771,7 @@ class Map extends Object {
 	/**
 	 * 检索或设置映射的大小写敏感性设置.
 	 */
-	CaseSense => Number
+	CaseSense => String
 
 	/**
 	 * 定义找不到键时返回的默认值.

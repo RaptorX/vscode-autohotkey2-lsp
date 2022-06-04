@@ -616,7 +616,7 @@ EnvGet(EnvVarName) => String
 /**
  * Write the value to the variable contained in the environment variable.
  */
-EnvSet(EnvVar, Value) => void
+EnvSet(EnvVar [, Value]) => void
 
 /**
  * Exit the current thread. When the script exits, it returns an integer between -2147483648 and 2147483647 to its caller.
@@ -1038,7 +1038,7 @@ GetKeyVK(KeyName) => Number
 /**
  * The implementation function of the retrieval method.
  */
-GetMethod(Value, Name) => Func
+GetMethod(Value [, Name, ParamCount]) => Func
 
 /**
  * Activate the next window in the window group defined by GroupAdd.
@@ -1090,7 +1090,7 @@ HasBase(Value, BaseObj) => Number
 /**
  * If the specified value has a method with the specified name, a non-zero number is returned.
  */
-HasMethod(Value, Name) => Number
+HasMethod(Value [, Name, ParamCount]) => Number
 
 /**
  * If the specified value has an attribute with the specified name, a non-zero number is returned.
@@ -1417,7 +1417,7 @@ Log(Number) => Number
 /**
  * Trim characters from the beginning of the string.
  */
-LTrim(String, OmitChars := '`t') => String
+LTrim(String, OmitChars := ' `t') => String
 
 /**
  * Returns the maximum value of one or more numbers.
@@ -1811,7 +1811,7 @@ RegRead([KeyName, ValueName, Default]) => String
 /**
  * Write the value to the registry.
  */
-RegWrite(Value, ValueType, KeyName [, ValueName]) => void
+RegWrite(Value [, ValueType, KeyName, ValueName]) => void
 
 /**
  * Replaces the currently running instance of the script with a new one.
@@ -1826,7 +1826,7 @@ Round(Number, N := 0) => Number | String
 /**
  * Trim characters from the end of the string.
  */
-RTrim(String, OmitChars := '`t') => String
+RTrim(String, OmitChars := ' `t') => String
 
 /**
  * Run external programs.
@@ -2261,7 +2261,7 @@ TrayTip(Text := '', Title := '', Options := 0) => void
 /**
  * Trim characters from the beginning and end of the string.
  */
-Trim(String, OmitChars := '`t') => String
+Trim(String, OmitChars := ' `t') => String
 
 /**
  * The exact type of the return value.
@@ -3787,7 +3787,7 @@ class Map extends Object {
 	/**
 	 * Retrieve or set the case sensitivity setting of the mapping.
 	 */
-	CaseSense => Number
+	CaseSense => String
 
 	/**
 	 * Define the default value returned when the key is not found.

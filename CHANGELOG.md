@@ -1,3 +1,22 @@
+## 1.3.5
+- 修复[#99](https://github.com/thqby/vscode-autohotkey2-lsp/issues/99)
+- 修复语法高亮的错误 [#101](https://github.com/thqby/vscode-autohotkey2-lsp/issues/101)
+
+## 1.3.4
+- 修复部分行语句无法触发参数提示
+- 修复格式化错误 [#95](https://github.com/thqby/vscode-autohotkey2-lsp/issues/95)
+
+## 1.3.3
+- 功能移至上下文菜单 [#94](https://github.com/thqby/vscode-autohotkey2-lsp/issues/94)
+
+## 1.3.2
+- 修复[#92](https://github.com/thqby/vscode-autohotkey2-lsp/issues/92)
+- 增加打开工作区时, 子目录存在`lib`文件夹时, 将被视为脚本入口目录 [#91](https://github.com/thqby/vscode-autohotkey2-lsp/issues/91)
+
+## 1.3.1
+- 修复[#84](https://github.com/thqby/vscode-autohotkey2-lsp/issues/84)
+- 修复[#85](https://github.com/thqby/vscode-autohotkey2-lsp/issues/85)
+
 ## 1.2.9
 - 修复`try ... catch ... catch`诊断错误
 - 修复`this()`参数提示错误, 着色错误
