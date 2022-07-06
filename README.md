@@ -5,15 +5,6 @@
 
 [中文版 README](#AutoHotkey2语言支持)往下翻页
 
-## lsp-server download
-
-```shell
-# git
-git clone --depth=1 -b server https://github.com/thqby/vscode-autohotkey2-lsp
-# curl
-mkdir vscode-autohotkey2-lsp & cd vscode-autohotkey2-lsp & curl.exe -L -o ahk2-lsp-update.exe https://github.com/thqby/vscode-autohotkey2-lsp/releases/download/v1.3.9/ahk2-lsp-update.exe & ahk2-lsp-update.exe
-```
-
 ## repositories:
 
 [Github](https://github.com/thqby/vscode-autohotkey2-lsp)

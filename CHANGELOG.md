@@ -1,3 +1,26 @@
+## 1.4.3
+修复解析时部分变量丢失
+
+## 1.4.2
+- 修复[#116](https://github.com/thqby/vscode-autohotkey2-lsp/issues/116)
+- 优化关联脚本识别
+
+## 1.4.1
+- 修复[#114](https://github.com/thqby/vscode-autohotkey2-lsp/issues/114)
+- 修复[#115](https://github.com/thqby/vscode-autohotkey2-lsp/issues/115)
+
+## 1.4.0
+- 适配beta.6语法解析
+- 增加遗漏的内置函数[#111](https://github.com/thqby/vscode-autohotkey2-lsp/issues/111)
+- 修复格式化错误[#110](https://github.com/thqby/vscode-autohotkey2-lsp/issues/110)
+
+## 1.3.7
+- 增加空值合并运算符`??`和可选参数操作符`?`
+- 修复部分dllcall补全未触发
+- 修复[#106](https://github.com/thqby/vscode-autohotkey2-lsp/issues/106)
+- 修复[#107](https://github.com/thqby/vscode-autohotkey2-lsp/issues/107)
+- 修复[#108](https://github.com/thqby/vscode-autohotkey2-lsp/issues/108)
+
 ## 1.3.6
 - 修复格式化错误
 - 修复部分类型推导失败
