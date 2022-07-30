@@ -1105,7 +1105,7 @@ HasProp(Value, Name) => Number
 /**
  * Specify the conditions for subsequent creation or modification of hotkey variants.
  */
-HotIf(FuncOrExpr) => void
+HotIf([FuncOrExpr]) => void
 
 /**
  * Specify the conditions for the hotkey variants to be subsequently created or modified.
@@ -1770,12 +1770,22 @@ ProcessClose(PIDOrName) => Number
  * 
  * Name: The name of the process is usually the same as its executable file (no path), such as notepad.exe or winword.exe. Since the name may match multiple running processes, only the first matching process is operated on. The name is not case sensitive.
  */
-ProcessExist(PIDOrName := '') => Number
+ProcessExist(PIDOrName?) => Number
+
+/**
+ * Returns the name of the specified process.
+ */
+ProcessGetName(PIDOrName?) => String
+
+/**
+ * Returns the path of the specified process.
+ */
+ProcessGetPath(PIDOrName?) => String
 
 /**
  * Change the priority of the first matching process.
  */
-ProcessSetPriority(Level, PIDOrName := '') => Number
+ProcessSetPriority(Level, PIDOrName?) => Number
 
 /**
  * Wait for the specified process to exist.
@@ -1797,6 +1807,11 @@ ProcessWaitClose(PIDOrName [, Timeout]) => Number
  * For floating point numbers, the maximum value is usually not included.
  */
 Random([A, B]) => Number
+
+/**
+ * Creates a registry key without writing a value.
+ */
+RegCreateKey(KeyName?) => void
 
 /**
  * Delete the value from the registry.
@@ -3590,7 +3605,7 @@ class Gui extends Object {
 	}
 }
 
-class IndexError extends Error {
+class IndexError extends ValueError {
 }
 
 class InputHook extends Object {
@@ -3767,10 +3782,7 @@ class Integer extends Number {
 	/**
 	 * Convert a numeric string or floating point value to an integer.
 	 */
-	 static Call(Value) => Number
-}
-
-class KeyError extends IndexError {
+	static Call(Value) => Number
 }
 
 class Map extends Object {
@@ -3830,7 +3842,7 @@ class Map extends Object {
 	Default => Any
 }
 
-class MemberError extends Error {
+class MemberError extends UnsetError {
 }
 
 class MemoryError extends Error {
@@ -4025,6 +4037,12 @@ class TimeoutError extends Error {
 }
 
 class TypeError extends Error {
+}
+
+class UnsetError extends Error {
+}
+
+class UnsetItemError extends UnsetError {
 }
 
 class ValueError extends Error {

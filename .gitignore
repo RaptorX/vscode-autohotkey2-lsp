@@ -17,3 +17,4 @@ icon.png
 .vscodeignore
 !*.nls.*
 !package.json
+scripts/*

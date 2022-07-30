@@ -1105,7 +1105,7 @@ HasProp(Value, Name) => Number
 /**
  * 指定后续创建或修改热键变体的条件.
  */
-HotIf(FuncOrExpr) => void
+HotIf([FuncOrExpr]) => void
 
 /**
  * 指定随后创建或修改的热键变体的条件.
@@ -1770,12 +1770,22 @@ ProcessClose(PIDOrName) => Number
  * 
  * Name: 进程的名称通常与其可执行文件相同(没有路径), 例如 notepad.exe 或 winword.exe. 由于名称可能匹配多个正在运行的进程, 因此只对第一个匹配的进程进行操作. 该名称不区分大小写.
  */
-ProcessExist(PIDOrName := '') => Number
+ProcessExist(PIDOrName?) => Number
+
+/**
+ * 返回指定进程的名称.
+ */
+ProcessGetName(PIDOrName?) => String
+
+/**
+ * 返回指定进程的路径.
+ */
+ProcessGetPath(PIDOrName?) => String
 
 /**
  * 更改第一个匹配进程的优先级.
  */
-ProcessSetPriority(Level, PIDOrName := '') => Number
+ProcessSetPriority(Level, PIDOrName?) => Number
 
 /**
  * 等待指定的进程存在.
@@ -1797,6 +1807,11 @@ ProcessWaitClose(PIDOrName [, Timeout]) => Number
  * 对于浮点数, 通常不包括最大值.
  */
 Random([A, B]) => Number
+
+/**
+ * 创建注册表项而不写入值.
+ */
+RegCreateKey(KeyName?) => void
 
 /**
  * 从注册表中删除值.
@@ -3574,7 +3589,7 @@ class Gui extends Object {
 	}
 }
 
-class IndexError extends Error {
+class IndexError extends ValueError {
 }
 
 class InputHook extends Object {
@@ -3754,9 +3769,6 @@ class Integer extends Number {
 	static Call(Value) => Number
 }
 
-class KeyError extends IndexError {
-}
-
 class Map extends Object {
 	/**
 	 * Map对象将一组称为键的值关联或映射到另一组值.
@@ -3814,7 +3826,7 @@ class Map extends Object {
 	Default => Any
 }
 
-class MemberError extends Error {
+class MemberError extends UnsetError {
 }
 
 class MemoryError extends Error {
@@ -4009,6 +4021,12 @@ class TimeoutError extends Error {
 }
 
 class TypeError extends Error {
+}
+
+class UnsetError extends Error {
+}
+
+class UnsetItemError extends UnsetError {
 }
 
 class ValueError extends Error {

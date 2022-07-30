@@ -1,5 +1,29 @@
+## 1.4.9
+- 修复[#130](https://github.com/thqby/vscode-autohotkey2-lsp/issues/130)
+
+## 1.4.7
+- 修复[#127](https://github.com/thqby/vscode-autohotkey2-lsp/issues/127)
+- 修复[#128](https://github.com/thqby/vscode-autohotkey2-lsp/issues/128)
+
+## 1.4.6
+- 修复[#125](https://github.com/thqby/vscode-autohotkey2-lsp/issues/125)
+- 修复[#126](https://github.com/thqby/vscode-autohotkey2-lsp/issues/126)
+- 增加`[]`,`()`折叠
+
+
+## 1.4.5
+- 修复[#118](https://github.com/thqby/vscode-autohotkey2-lsp/issues/118)
+- 修复[#119](https://github.com/thqby/vscode-autohotkey2-lsp/issues/119)
+- 修复[#120](https://github.com/thqby/vscode-autohotkey2-lsp/issues/120)
+- 修复[#121](https://github.com/thqby/vscode-autohotkey2-lsp/issues/121)
+- 增加beta.7函数信息
+
+## 1.4.4
+- 修复[#117](https://github.com/thqby/vscode-autohotkey2-lsp/issues/117)
+- 修复部分`寻找所有引用`不正确
+
 ## 1.4.3
-修复解析时部分变量丢失
+- 修复解析时部分变量丢失
 
 ## 1.4.2
 - 修复[#116](https://github.com/thqby/vscode-autohotkey2-lsp/issues/116)
