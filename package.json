@@ -4,7 +4,7 @@
 	"description": "Autohotkey2 Language Support using vscode-lsp.",
 	"author": "thqby",
 	"publisher": "thqby",
-	"version": "1.4.9",
+	"version": "1.5.1",
 	"license": "LGPLv3.0",
 	"categories": [
 		"Formatters",
@@ -16,8 +16,8 @@
 		"autohotkey2",
 		"AutoHotkey2"
 	],
-	"repository": "https://github.com/thqby/vscode-autohotkey2-lsp/tree/master",
-	"homepage": "https://github.com/thqby/vscode-autohotkey2-lsp/blob/master/README.md",
+	"repository": "https://github.com/thqby/vscode-autohotkey2-lsp",
+	"homepage": "https://github.com/thqby/vscode-autohotkey2-lsp/blob/main/README.md",
 	"icon": "icon.png",
 	"bugs": {
 		"url": "https://github.com/thqby/vscode-autohotkey2-lsp/issues"
@@ -89,7 +89,7 @@
 				"AutoHotkey2.CompilerCMD": {
 					"scope": "window",
 					"type": "string",
-					"default": "/compress 0",
+					"default": "/compress 0 /base ${execPath}",
 					"description": "%ahk2.compilercmd%"
 				},
 				"AutoHotkey2.DefaultDebugger": {

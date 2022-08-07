@@ -1,7 +1,7 @@
 {
 	"ahk2.autolibinclude": "对用户库和标准库, 本地库提供补全和自动include",
 	"ahk2.compile": "编译脚本",
-	"ahk2.compilercmd": "编译器命令行选项. 如果未指定ahk2exe.exe, 将使用默认路径.",
+	"ahk2.compilercmd": "编译器命令行选项. 如果未指定ahk2exe.exe, 将使用默认路径. ${execPath}等价于当前选择的AutoHotkey.exe",
 	"ahk2.completefunctionparens": "给函数补全添加括号",
 	"ahk2.debug": "调试脚本",
 	"ahk2.debug.attach": "附加到运行中的脚本",
@@ -42,6 +42,7 @@
 	"diagnostic.funcassignerr": "无法为函数分配值",
 	"diagnostic.funccallerr": "函数调用需要空格或'(', 仅在参数之间使用逗号",
 	"diagnostic.hotdeferr": "热键/热字串不能在函数/类中定义",
+	"diagnostic.hotmissbrace": "热键或热字符串缺少左括号",
 	"diagnostic.invaliddefinition": "无效的{0}定义",
 	"diagnostic.invalidhotdef": "无效的热键定义",
 	"diagnostic.invalidparam": "无效的参数定义",

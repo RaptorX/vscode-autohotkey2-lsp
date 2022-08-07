@@ -10,11 +10,12 @@ node_modules
 *.vsix
 *.map
 *.json
-server/dist/browserServerMain.js
-webpack.config.js
-.github/FUNDING.yml
+*.js
+*.yml
 icon.png
 .vscodeignore
+scripts/*
+!server/dist/server.js
 !*.nls.*
 !package.json
-scripts/*
+!syntaxes/*
