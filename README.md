@@ -1,7 +1,9 @@
 # AutoHotkey2 Language Support
 
-[![installs](https://vsmarketplacebadge.apphb.com/installs/thqby.vscode-autohotkey2-lsp.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)
-[![version](https://vsmarketplacebadge.apphb.com/version/thqby.vscode-autohotkey2-lsp.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)
+[![installs](https://img.shields.io/visual-studio-marketplace/i/thqby.vscode-autohotkey2-lsp?label=Extension%20Install&style=for-the-badge&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)
+[![version](https://img.shields.io/visual-studio-marketplace/v/thqby.vscode-autohotkey2-lsp?label=Extension%20Version&style=for-the-badge&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)
+[![](https://img.shields.io/badge/Compatibility-autohotkey%20v2.0--beta.7-green?style=for-the-badge&logo=autohotkey)](https://www.autohotkey.com/)
+
 
 [中文版 README](#AutoHotkey2语言支持)往下翻页
 
@@ -90,7 +92,7 @@ Semantic highlighting is an addition to syntax highlighting, resolves symbols in
 
 ### Blocks
 
-usage: Add `;;` or `; TODO ` to the comment code block.  
+usage: Add `;;`(default) or `; TODO ` to the comment code block.  
 
 ![codeSymbole](https://github.com/thqby/vscode-autohotkey2-lsp/raw/main/pic/codeSymbol.png)
 
@@ -132,7 +134,7 @@ usage:
 
 Fold the part between `;#region` and `;#endregion`, `;{` and `;}`
 ```
-;#region
+;#region tag
 code
 ;#endregion
 ```
@@ -268,7 +270,7 @@ AutoHotKey V2 语言支持 for VS Code, 功能实现基于v2语法分析.
 
 ### 代码标记
 
-用法: 在注释代码块中添加`;;`或`; TODO `  
+用法: 在注释代码块中添加`;;`(默认)或`; TODO `  
 ![codeSymbole](https://github.com/thqby/vscode-autohotkey2-lsp/raw/main/pic/codeSymbol.png)
 
 ### 颜色提示
@@ -308,7 +310,7 @@ AutoHotKey V2 语言支持 for VS Code, 功能实现基于v2语法分析.
 
 折叠`;#region`和`;#endregion`之间部分, `;{`和`;}`之间部分
 ```
-;#region
+;#region tag
 code
 ;#endregion
 ```

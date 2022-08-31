@@ -1,3 +1,51 @@
+## 1.5.9
+- 修复部分格式化错误
+- 修复符号搜索错误
+- 增加延续片段、热字串选项着色
+- 增加设置项[#173](https://github.com/thqby/vscode-autohotkey2-lsp/issues/173)
+- 修复[#171](https://github.com/thqby/vscode-autohotkey2-lsp/issues/171)
+- 修复[#172](https://github.com/thqby/vscode-autohotkey2-lsp/issues/172)
+- 修复[#174](https://github.com/thqby/vscode-autohotkey2-lsp/issues/174)
+
+## 1.5.8
+- 修复[#169](https://github.com/thqby/vscode-autohotkey2-lsp/issues/169)
+- 修复[#170](https://github.com/thqby/vscode-autohotkey2-lsp/issues/170)
+- 增加`代码格式化`、`类静态成员检查`选项
+
+## 1.5.7
+- 修复[#164](https://github.com/thqby/vscode-autohotkey2-lsp/issues/164)
+- 修复[#165](https://github.com/thqby/vscode-autohotkey2-lsp/issues/165)
+- 修复[#166](https://github.com/thqby/vscode-autohotkey2-lsp/issues/166)
+- 修复[#167](https://github.com/thqby/vscode-autohotkey2-lsp/issues/167)
+- 修复[#168](https://github.com/thqby/vscode-autohotkey2-lsp/issues/168)
+- 当选择`AutoHotkeyUX.exe`时, 使用UX Launcher启动脚本 [#157](https://github.com/thqby/vscode-autohotkey2-lsp/issues/157)
+
+## 1.5.6
+- 修复[#158](https://github.com/thqby/vscode-autohotkey2-lsp/issues/158)
+- 修复[#159](https://github.com/thqby/vscode-autohotkey2-lsp/issues/159)
+- 修复[#160](https://github.com/thqby/vscode-autohotkey2-lsp/issues/160)
+- 修复[#161](https://github.com/thqby/vscode-autohotkey2-lsp/issues/161)
+- 修复[#162](https://github.com/thqby/vscode-autohotkey2-lsp/issues/162)
+- 修复延续片段字符串
+
+## 1.5.5
+- 修复[#154](https://github.com/thqby/vscode-autohotkey2-lsp/issues/154)
+- 修复[#155](https://github.com/thqby/vscode-autohotkey2-lsp/issues/155)
+- 修复[#156](https://github.com/thqby/vscode-autohotkey2-lsp/issues/156)
+
+## 1.5.4
+- 修复[#145-#152]
+- 增加支持简单`延续部分`, `::abc::\n(\nstr\n)`
+
+## 1.5.3
+- 修复[#143](https://github.com/thqby/vscode-autohotkey2-lsp/issues/143)
+- 修复[#144](https://github.com/thqby/vscode-autohotkey2-lsp/issues/144)
+
+## 1.5.2
+- 修复[#139](https://github.com/thqby/vscode-autohotkey2-lsp/issues/139)
+- 修复[#140](https://github.com/thqby/vscode-autohotkey2-lsp/issues/140)
+- 修复[#141](https://github.com/thqby/vscode-autohotkey2-lsp/issues/141)
+
 ## 1.5.1
 - 修复[#133](https://github.com/thqby/vscode-autohotkey2-lsp/issues/133)
 - 修复[#134](https://github.com/thqby/vscode-autohotkey2-lsp/issues/134)
