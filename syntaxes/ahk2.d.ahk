@@ -2034,9 +2034,9 @@ MouseMove(X, Y [, Speed, Relative]) => void
  * 
  * T: Timeout. If the user does not close the message box within the specified time, to make the message box close automatically, please use the letter T followed by the timeout seconds, which can include a decimal point. If the value exceeds 2147483 (24.8 days), it will be Set to 2147483. If the message box times out, the return value is the word Timeout.
  * 
- * 0x0 confirm
+ * 0x0 OK
  * 
- * 0x1 Confirm/Cancel
+ * 0x1 OK/Cancel
  * 
  * 0x2 abort/retry/ignore
  * 
